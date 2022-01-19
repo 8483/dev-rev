@@ -8,14 +8,14 @@
         left: {bubble.x}%;
         top: {bubble.y}%;
 
-    
-        
+        width: {bubble.size}px;
+        height: {bubble.size}px;
+
         background: rgba({Math.random() * 255}, {Math.random() * 255}, {Math.random() * 255}, 0.5)
     "
 >
     <div class="title">
         {bubble.title}
-        {bubble.size}
     </div>
 </div>
 

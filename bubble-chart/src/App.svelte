@@ -11,4 +11,12 @@
     });
 </script>
 
-<Chart {data} />
+<div class="container">
+    <Chart {data} />
+</div>
+
+<style>
+    .container {
+        padding: 10px;
+    }
+</style>
