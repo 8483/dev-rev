@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+        crossorigin="anonymous"
+    />
+
+    <style>
+        :root {
+            --blue: #1a73e8;;
+        }
+
+        html, body {
+            margin: 0px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        a {
+            color: var(--blue);
+            font-weight: bold;
+        }
+
+        /* Layout =================================================== */
+
+        .container {
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+
+            align-items: center;
+            justify-content: center;
+            /* background: black; */
+        }
+
+        .event {
+            background: white;
+            width: 300px;
+            height: 600px;
+
+            box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+            border-radius: 5px;
+
+            display: flex;
+            flex-direction: column;
+
+            padding: 10px;
+        }
+
+        .header {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .header i, .guests-header i {
+            margin-left: 20px;
+        }
+
+        .body {
+            overflow: auto;
+            padding-right: 20px;
+        }
+
+        /* Info =================================================== */
+
+        section {
+            display: grid;
+            grid-template-columns: 1fr 5fr;
+            margin-bottom: 20px;
+        }
+
+        .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .icon i, .icon img, .icon div {
+            width: 20px;
+            height: 20px;
+        }
+
+        .event-color {
+            border-radius: 3px;
+            background: var(--blue);
+        }
+
+        /* Guests =================================================== */
+
+        .guests-header {
+            display: flex;
+            align-items: center;
+        }
+
+        .guests {
+            grid-column: 2/-1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .guest {
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        .guest-info {
+           margin-left: 10px;
+        }
+
+        .guest-role {
+            opacity: 0.5;
+        }
+
+        .guest-pic {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            background: black;
+            opacity: 0.2;
+
+            align-self: center;
+        }
+
+        /* Scrollbar =================================================== */
+
+        /* width */
+        ::-webkit-scrollbar {
+            width: 10px;
+            height: 10px;
+            cursor: pointer;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            /* background: #ccc; */
+            background: rgba(0, 0, 0, 0.1);
+            border-radius: 3px;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            /* background: #bbb; */
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 3px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            /* background: #aaa; */
+            background: rgba(0, 0, 0, 0.4);
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="event">
+
+            <div class="header">
+                <i class="fas fa-pen" style="margin-left: auto;"></i>
+                <i class="far fa-trash-alt"></i>
+                <i class="fas fa-external-link-alt"></i>
+                <i class="fas fa-times"></i>
+            </div>
+
+            <div class="body">
+
+                <section>
+                    <div class="icon" style="align-items: flex-start;">
+                        <div class="event-color"></div>
+                    </div>
+
+                    <div class="title">
+                        <div class="title-name">
+                            <b>DevRev Interview - Ivan Veselinovski - Software</b>
+                        </div>
+        
+                        <div class="title-time">
+                            Wednesday, January 19⋅09:00 – 10:00
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="icon">
+                        <img  src="https://ssl.gstatic.com/calendar/images/conferenceproviders/logo_meet_2020q4_192px.svg" alt="">
+                    </div>
+
+                    <div>
+                        <a>
+                            Join with Google meet
+                        </a>
+
+                        <div>
+                            meet.google.com/iyp-yqxw-ahz
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+
+                    <div>
+                        <a>
+                            Join by phone
+                        </a>
+
+                        <div>
+                            (GB) +44 20 3873 3170549 510 541 2997
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="icon">
+                        <i class="fas fa-external-link-alt"></i>
+                    </div>
+
+                    <div>
+                        More phone numbers
+                    </div>
+                </section>
+                
+                <section>
+                    <div class="icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+
+                    <div>
+                        <a>
+                            Take meeting notes
+                        </a>
+
+                        <div>
+                            Start a new document to capture
+                        </div> 
+                    </div>
+                </section>
+
+                <section>
+                    <div class="icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+
+                    <div class="guests-header">
+                        3 guests
+
+                        <i class="far fa-comment-alt" style="margin-left: auto;"></i> 
+                        <i class="far fa-envelope"></i>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="guests">
+
+                        <div class="guest">
+                            <div class="guest-pic"></div>
+                            <div class="guest-info">
+                                <div class="guest-name">Name Lastname 1</div>
+                                <div class="guest-role">role</div>
+                            </div>
+                        </div>
+
+                        <div class="guest">
+                            <div class="guest-pic"></div>
+                            <div class="guest-info">
+                                <div class="guest-name">Name Lastname 2</div>
+                                <div class="guest-role">role</div>
+                            </div>
+                        </div>
+
+                        <div class="guest">
+                            <div class="guest-pic"></div>
+                            <div class="guest-info">
+                                <div class="guest-name">Name Lastname 3</div>
+                                <div class="guest-role">role</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="icon" style="align-items: flex-start;">
+                        <i class="fas fa-align-left" ></i>
+                    </div>
+
+                    <div>
+                        We're looking forward to speaking with you. You're scheduled for a Technical Interview - Data Structures & Algorithms (60 minutes) interview with:
+                    </div>
+                </section>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
